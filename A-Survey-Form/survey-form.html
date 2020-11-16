@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form for Blog</title>
+  </head>
+  <body>
+    <header class="header">
+      <label>
+      <h1 id="title">SaathOnline Survey Form</h1>
+      <p id="description">Thank you for your time to help us improve our Blog.</p>
+      </label>
+    </header>
+
+    <form id="survey-form" method="post">
+      <div class="form-group">
+        <label id="name-label" for="name">
+          Name
+        </label>
+        <input type="text"
+          id="name"
+          name="name"
+          placeholder="enter your name"
+          required>
+          <br>
+
+        <label id="email-label" for="email">
+          E-mail
+        </label>
+        <input type="email"
+          id="email"
+          name="email"
+          placeholder="enter your email"
+          required>
+          <br>
+
+        <label id="number-label" for="age">
+          Age <span class="clue">(optional)</span>
+        </label>
+        <input
+          type="number"
+          id="age"
+          min="10"
+          max="99"
+          name="age"
+          placeholder="your age">
+          <br>
+
+
+        <label>Which option best describes you?</label>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value="select">Select role</option>
+          <option value="student">College Student</option>
+          <option value="teacher">Faculty</option>
+          <option value="public">General Public</option>
+          <option value="preferNot">Prefer not to say</option>
+        </select>
+        <br>
+
+
+          <label>Would you recommend SaathOnline blog to a friend?</label>
+          <br>
+          <label>
+            <input type="radio"
+              name="user-recommend"
+              value="definitely">Yes, definitely
+          </label>
+          <br>
+
+          <label>
+            <input type="radio"
+              name="user-recommend"
+              value="maybe">Maybe
+          </label>
+          <br>
+
+          <label>
+            <input type="radio"
+              name="user-recommend"
+              value="notSure">Not sure, right at this moment
+        </label>
+        <br>
+
+
+        <label>What would you like to see improved?
+          <span class="clue">(Check all that apply)</span>
+        </label>
+        <br>
+        <label>
+          <input type="checkbox"
+            name="like"
+            value="post-freq">Blogposts Frequency
+        </label>
+        <br>
+        <label>
+          <input type="checkbox"
+            name="like"
+            value="blog-design">Design of the blog
+        </label>
+        <br>
+        <label>
+          <input type="checkbox"
+            name="like"
+            value="quality">Blogposts Quality
+        </label>
+        <br>
+        <label>
+          <input type="checkbox"
+            name="like"
+            value="diversity">Topic diversity
+        </label>
+        <br>
+
+        <label for="suggestions">Any suggestions?</label>
+        <br>
+        <textarea
+          id="suggestions"
+          placeholder="suggestions here..."
+          rows="8"
+          cols="80"
+          >No comments.</textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+<hr>
+<footer>&copy;Sathvik PN. All rights reserved.</footer>
+  </body>
+</html>
